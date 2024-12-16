@@ -151,27 +151,3 @@ body {
   }
   
 
-
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-tap.css">
-    <script defer src="game.js"> </script>
-
-    <title>Document</title>
-</head>
-<body>
-    <div class="game">
-        <h2>Прочищаем цилиндры</h2>
-        <h2>Очки:</h2>
-        
-        <input id="scores"  type="readonly" ><br>
-     
-        <div><img id="button" src="D70A4094.png" alt="logo"></div>
-    </div>
-    
-
-</body>
-</html>
