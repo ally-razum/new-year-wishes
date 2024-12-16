@@ -56,7 +56,7 @@ const wishes = [
 // Получаем элементы
 const wishButton = document.getElementById('wish-button');
 const wishBox = document.getElementById('wish-box');
-
+const infoContainer = document.getElementById('info-container');
 // Функция для вывода случайного пожелания
 function getRandomWish() {
     const randomIndex = Math.floor(Math.random() * wishes.length);
@@ -68,9 +68,12 @@ wishButton.addEventListener('click', () => {
     const wish = getRandomWish();
     wishBox.textContent = wish;
     wishBox.classList.add('show');
+    infoContainer.style.display = 'none'; // Скрыть блок с информацией
 
-    // Убираем старое пожелание через 10 секунд
+    // Убираем старое пожелание через 7 секунд
     setTimeout(() => {
         wishBox.classList.remove('show');
-    }, 10000);
+        infoContainer.style.display = 'block';
+
+    }, 7000);
 });
