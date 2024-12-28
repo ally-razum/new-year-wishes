@@ -71,9 +71,9 @@ wishButton.addEventListener('click', () => {
     infoContainer.style.display = 'none'; // Скрыть блок с информацией
 
     // Убираем старое пожелание через 7 секунд
-    setTimeout(() => {
-        wishBox.classList.remove('show');
-        infoContainer.style.display = 'block';
+    // setTimeout(() => {
+    //     wishBox.classList.remove('show');
+    //     infoContainer.style.display = 'block';
 
-    }, 7000);
+    // }, 7000);
 });
